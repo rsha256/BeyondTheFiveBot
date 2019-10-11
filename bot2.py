@@ -13,6 +13,7 @@ async def on_message(message):
         return
 
     if message.content.startswith('!hello'):
+        print('Logged: Hello message')
         await message.channel.send('Hello!')
 
     elif message.content.startswith('!members'):
